@@ -26,6 +26,7 @@ module.exports = {
         text: '指南', link: '/pages/4d70dc/', items: [
           { text: '手册的初衷以及适用人群', link: '/pages/1ba529/' },
           { text: '介绍', link: '/pages/4d70dc/' },
+          { text: 'JAVA涉及技术总览', link: '/pages/f5ef63/' },
           {
             text: '相关文章', items: [
               { text: '25届实习内推', link: '/pages/88cd1f/' },
