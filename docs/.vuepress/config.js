@@ -1,6 +1,5 @@
 const baiduCode = require('./config/baiduCode.js'); // 百度统计hm码
 
-
 module.exports = {
 
   theme: 'vdoing', // 使用依赖包主题
@@ -10,35 +9,53 @@ module.exports = {
   description: '一本注重提升思维能力的开发自救手册。',
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-    ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
-    ['meta', { name: 'keywords', content: 'vuepress,theme,blog,vdoing' }],
-    ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
+    ['link', {rel: 'icon', href: '/img/favicon.ico'}], //favicons，资源放在public文件夹
+    ['meta', {name: 'keywords', content: 'vuepress,theme,blog,vdoing'}],
+    ['meta', {name: 'theme-color', content: '#11a8cd'}], // 移动浏览器主题颜色
 
-    ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
-    ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
+    ['meta',
+      {name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87'}], // 广告相关，你可以去掉
+    ['script',
+      {src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript'}], // 广告相关，你可以去掉
   ],
 
   // 主题配置
   themeConfig: {
     nav: [
-      { text: '首页', link: '/' },
+      {text: '首页', link: '/'},
       {
-        text: '指南', link: '/pages/4d70dc/', items: [
-          { text: '手册的初衷以及适用人群', link: '/pages/1ba529/' },
-          { text: '介绍', link: '/pages/4d70dc/' },
-          { text: 'JAVA涉及技术总览', link: '/pages/f5ef63/' },
+        text: 'Java指南', link: '/pages/4d70dc/', items: [
+          {
+            text: '指南',
+            items: [
+              {text: '手册的初衷以及适用人群', link: '/pages/1ba529/'},
+              {text: '介绍', link: '/pages/4d70dc/'},
+              {text: 'JAVA涉及技术总览', link: '/pages/f5ef63/'},
+            ]
+          },
           {
             text: '相关文章', items: [
-              { text: '25届实习内推', link: '/pages/88cd1f/' },
+              {text: '25届实习内推', link: '/pages/88cd1f/'},
             ]
           }
         ]
       },
-      { text: '友情链接', link: '/pages/daa40c/'},
-      { text: '加入我们', items: [
-          { text: '我们是谁', link: '/pages/385249/'},
-          { text: '如何加入', link: '/pages/c91501/'}
-        ]}
+      {
+        text: '推荐阅读', link: '/pages/3001d9/', items: [
+          {
+            text: 'cpp指南', items: [
+              {text: 'cpp自救指南', link: '/pages/3001d9/'}
+            ]
+          }
+        ]
+      },
+      {text: '友情链接', link: '/pages/daa40c/'},
+      {
+        text: '加入我们', items: [
+          {text: '我们是谁', link: '/pages/385249/'},
+          {text: '如何加入', link: '/pages/c91501/'}
+        ]
+      }
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
@@ -51,7 +68,7 @@ module.exports = {
     // editLinkText: '编辑',
 
     // 以下配置是Vdoing主题改动的和新增的配置
-    sidebar: { mode: 'structuring', collapsable: false }, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
+    sidebar: {mode: 'structuring', collapsable: false}, // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | 自定义    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
 
     // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
     updateBar: { // 最近更新栏
@@ -127,7 +144,8 @@ module.exports = {
     ],
 
     ['one-click-copy', { // 代码块复制按钮
-      copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
+      copySelector: ['div[class*="language-"] pre',
+        'div[class*="aside-code"] aside'], // String or Array
       copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
       duration: 1000, // prompt message display time.
       showInMobile: false // whether to display on the mobile side, default: false.

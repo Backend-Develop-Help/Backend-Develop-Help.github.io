@@ -3,6 +3,20 @@
 
 <h2 align="center">开发自救手册</h2>
 
-[在线文档(国内源)](http://blogchn.com/)
+## 如何贡献
+fork该仓库  
+npm推荐版本>=18  
+npm安装
+```shell
+npm install
+```
 
-[主题仓库](https://github.com/Backend-Develop-Help/Backend-Develop-Help.github.io)
+根据环境选择
+```shell
+npm run dev
+
+npm run dev:win
+```
+按照格式进行开发，编译后会自动帮md文档添加title  
+
+开发完毕通过pr形式合并master分支，合并后自动部署
