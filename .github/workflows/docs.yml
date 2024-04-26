@@ -26,6 +26,8 @@ jobs:
           cache: 'npm'
 
       # 运行构建脚本
+      - name: Install Dependencies
+        run: npm install
       - name: Build VuePress site
         run: npm run build
 
