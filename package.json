@@ -9,7 +9,8 @@
     "predev": "node utils/check.js dev && vdoing",
     "prebuild": "node utils/check.js build && vdoing",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D",
-    "editFm": "node utils/editFrontmatter.js"
+    "editFm": "node utils/editFrontmatter.js",
+    "docs:build": "vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
