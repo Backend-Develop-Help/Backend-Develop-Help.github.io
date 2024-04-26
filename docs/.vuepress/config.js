@@ -54,8 +54,8 @@ module.exports = {
       },
       {text: '友情链接', link: '/pages/daa40c/'},
       {
-        text: '加入我们', items: [
-          {text: '我们是谁', link: '/pages/385249/'},
+        text: '参与分享', items: [
+          {text: '团队介绍', link: '/pages/385249/'},
           {text: '如何加入', link: '/pages/c91501/'}
         ]
       }
