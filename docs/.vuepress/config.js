@@ -37,6 +37,9 @@ module.exports = {
             text: '相关文章', items: [
               {text: '25届实习内推', link: '/pages/88cd1f/'},
             ]
+          },
+          {
+            text: '技术场景', link: '/pages/b3dd9c/'
           }
         ]
       },
