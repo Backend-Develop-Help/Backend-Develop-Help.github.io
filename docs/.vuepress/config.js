@@ -58,6 +58,12 @@ module.exports = {
           {text: '团队介绍', link: '/pages/385249/'},
           {text: '如何加入', link: '/pages/c91501/'}
         ]
+      },
+      {
+        text: '技术学习', items: [
+          {text: '编程语言', link: '/pages/771788/'},
+          {text: '办公软件', link: '/pages/6d575a/'}
+        ]
       }
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
