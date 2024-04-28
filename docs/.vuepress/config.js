@@ -24,9 +24,9 @@ module.exports = {
     nav: [
       {text: '首页', link: '/'},
       {
-        text: 'Java指南', link: '/pages/4d70dc/', items: [
+        text: '开发认知扩展', link: '/pages/4d70dc/', items: [
           {
-            text: '指南',
+            text: 'Java指南',
             items: [
               {text: '手册的初衷以及适用人群', link: '/pages/1ba529/'},
               {text: '介绍', link: '/pages/4d70dc/'},
@@ -34,23 +34,34 @@ module.exports = {
             ]
           },
           {
-            text: '相关文章', items: [
-              {text: '25届实习内推', link: '/pages/88cd1f/'},
+            text: '技术场景', link: '/pages/b3dd9c/', items: [
+              { text: '线上代码覆盖率监控', link: '/pages/b3dd9c/'}
             ]
-          },
-          {
-            text: '技术场景', link: '/pages/b3dd9c/'
           }
         ]
       },
       {
-        text: '推荐阅读', link: '/pages/3001d9/', items: [
+        text: '好文分享', link: '/pages/3001d9/', items: [
+          {text: 'cpp自救指南', link: '/pages/3001d9/'}
+        ]
+      },
+      {
+        text: '面经&分享', items: [
           {
-            text: 'cpp指南', items: [
-              {text: 'cpp自救指南', link: '/pages/3001d9/'}
+            text: '真正的面经系列', link: '/pages/950801/'
+          },
+          {
+            text: '经历分享'
+          },
+          {
+            text: '相关文章', items: [
+              {text: '25届实习内推', link: '/pages/88cd1f/'},
             ]
           }
         ]
+      },
+      {
+        text: '八股文', items: []
       },
       {text: '友情链接', link: '/pages/daa40c/'},
       {
