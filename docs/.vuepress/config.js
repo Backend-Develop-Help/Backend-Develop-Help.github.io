@@ -42,7 +42,8 @@ module.exports = {
       },
       {
         text: '好文分享', link: '/pages/3001d9/', items: [
-          {text: 'cpp自救指南', link: '/pages/3001d9/'}
+          {text: 'cpp自救指南', link: '/pages/3001d9/'},
+          {text: 'go指南', link: '/pages/771788/'},
         ]
       },
       {
@@ -61,19 +62,15 @@ module.exports = {
         ]
       },
       {
-        text: '八股文', items: []
+        text: '八股文', items: [
+          {text: '微服务', link: '/pages/771792/'}
+        ]
       },
       {text: '友情链接', link: '/pages/daa40c/'},
       {
         text: '参与分享', items: [
           {text: '团队介绍', link: '/pages/385249/'},
           {text: '如何加入', link: '/pages/c91501/'}
-        ]
-      },
-      {
-        text: '技术学习', items: [
-          {text: '编程语言', link: '/pages/771788/'},
-          {text: '办公软件', link: '/pages/6d575a/'}
         ]
       }
     ],
