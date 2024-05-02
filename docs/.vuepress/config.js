@@ -42,7 +42,8 @@ module.exports = {
       },
       {
         text: '好文分享', link: '/pages/3001d9/', items: [
-          {text: 'cpp自救指南', link: '/pages/3001d9/'}
+          {text: 'cpp自救指南', link: '/pages/3001d9/'},
+          {text: 'go指南', link: '/pages/771788/'},
         ]
       },
       {
@@ -61,7 +62,9 @@ module.exports = {
         ]
       },
       {
-        text: '八股文', items: []
+        text: '八股文', items: [
+          {text: '微服务', link: '/pages/771792/'}
+        ]
       },
       {text: '友情链接', link: '/pages/daa40c/'},
       {
